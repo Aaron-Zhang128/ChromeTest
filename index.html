@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PyScript OpenAI Example</title>
+    <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css">
+    <script defer src="https://pyscript.net/latest/pyscript.js"></script>
+</head>
+<body>
+    <h1>OpenAI API with PyScript</h1>
+    <form id="userForm">
+        <label for="userInput">Enter your data:</label>
+        <input type="text" id="userInput" name="userInput" required>
+        <button type="submit">Submit</button>
+    </form>
+    <div id="response">
+        <h2>Response from OpenAI:</h2>
+        <pre id="output"></pre>
+    </div>
+    <py-script src="main.py"></py-script>
+</body>
+</html>
